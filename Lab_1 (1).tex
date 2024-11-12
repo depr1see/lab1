@@ -1,0 +1,314 @@
+
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol} %колонки
+\usepackage{setspace} %межстрочный интервал
+\usepackage{ragged2e}% выравнивания текста по ширине в документе.
+\usepackage{fancyhdr} %настройки верхнего и нижнего колонтитулов в документе.
+\usepackage{titlesec} %стилей заголовков разделов в документе.
+\usepackage{enumitem} %настройки списков в документе.
+\usepackage{lipsum}
+\usepackage[T2A]{fontenc}
+\usepackage{graphicx}%Вставка картинок правильная
+\usepackage{float}%"Плавающие" картинки
+\usepackage{wrapfig}%Обтекание фигур (таблиц, картинок и прочего)
+\usepackage[labelformat=empty]{caption}
+\usepackage[left=2.5cm,right=2.4cm, top=2.2cm,bottom=2.5cm]{geometry}
+\usepackage{etoolbox} % for '\patchcmd' macro
+\graphicspath{ {images/} }
+\justifying % выравнивает текст по ширине.
+\fancyhf{} %очищает все верхние и нижние колонтитулы.
+\renewcommand{\headrulewidth}{0pt} 
+\cfoot{\vskip -1.5cm \thepage} %устанавливает номер страницы в нижнем колонтитуле.
+\linespread{0.7} %устанавливает межстрочный интервал 
+
+\setlength{\columnsep}{0.65cm}
+\setcounter{page}{21}
+\renewcommand{\thesection}{\Roman{section}} %устанавливает стиль нумерации разделов в виде заглавных римских цифр.
+\setcounter{figure}{1}
+\titleformat{\section}{\footnotesize\centering\sc}{\thesection.}{0cm}{}[] %настраивает стиль заголовков разделов.
+
+\begin{document}
+
+
+\fontsize{10}{15}\selectfont
+\begin{multicols}{2}
+\setlength{\parindent}{0.8cm}
+\setlength{\parindent}{0.4cm}
+\fontsize{10}{15}\selectfont
+
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+  \setlength{\parskip}{1pt}
+  \setlength{\parsep}{0pt}
+\item[]  The hierarchical nature of the agent system makes it
+easy to develop and modify such systems by analogy
+with the hierarchical structure of problem solvers in
+\textit{individual ostis-systems} [4], [11]
+\item   In traditional systems, often all agents of the system,
+or at least a significant part of them, may be
+involved in problem solving. Taking into account the
+complexity of ostis-systems included in the OSTIS
+Ecosystem, such a situation is unlikely in the OSTIS
+Ecosystem and most often in the near future several
+ostis-systems, most often belonging to one ostis-community, will be involved in problem solving.
+\item  Traditional self-organizing systems are usually considered in isolation from the means of representation of information processed in such systems, i.e. neither the form of representation of processed
+information, nor the semantics of processed information are explicitly fixed. An important advantage of OSTIS \textit{Ecosystem} and OSTIS \textit{Technology} as a whole is the orientation on unified and universal
+models of information representation, realized in the form of OSTIS \textit {Technology} and a family of top-level ontologies built on its basis. This approach allows us to say
+\begin{enumerate}[label=\textbf{--},leftmargin=*]   
+\setlength{\itemsep}{0pt}
+  \setlength{\parskip}{1pt}
+  \setlength{\parsep}{0pt}
+\item about universality of the developed mechanisms
+of collective problem solving within OSTIS \textit {Ecosystem}, i.e. the possibility to unlimitedly increase the possibilities of OSTIS \textit {Ecosystem} to
+automate different kinds of human activities in various fields;
+\item about the possibility to describe the agents of
+the OSTIS Ecosystem by the same means that
+are used to describe the information processed
+by the agents, with the required degree of detail. Thus, it becomes possible to analyze the
+specification of some agents (e.g., their functional
+capabilities, classes of solved tasks, etc.) by other
+agents, which opens new opportunities for selforganization in collective problem solving.
+\item about the possibility of exchanging information
+constructions of arbitrary complexity between
+agents, there is no need to limit the possible
+semantics of such messages and, moreover, to fix
+their structure, as it is often done in traditional
+approaches. It should be emphasized that agents
+in the framework of the proposed approach do not
+exchange messages directly, but specify in a common knowledge base the actions they perform,
+so there are no fundamental restrictions on the
+content of such specification
+\end{enumerate}
+\end{itemize}\par
+The analysis of the presented features allows us to draw
+the following conclusions:
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+  \setlength{\parskip}{1pt}
+  \setlength{\parsep}{0pt}
+\item Direct application of existing approaches to selforganization in multi-agent systems for solving OSTIS \textit {Ecosystem} problems is not possible due to its
+essential features, but many known approaches can be adapted for solving a number of specific problems, for example, when organizing the exchange of messages between ostis-systems at the physical level, searching for the most suitable executor for solving this or that task and so on;
+\item At the same time, OSTIS \textit {Ecosystem} features allow
+not to consider at the level of collective problem
+solving a number of non-trivial problems related to
+reliability assurance and optimization of load distribution between ostis-systems, and open new opportunities to expand the range of possible spheres of
+human activity automation, to ensure interoperability of corresponding intelligent systems and their collectives and to reduce the labor intensity of their maintenance and evolution.
+\end{itemize}\par
+IV. Proposed approach to problem solving within the
+next-generation intelligent computer systems ecosystem\par
+The key difference of the proposed approach to the
+organization of decentralized problem solving in OSTIS
+Ecosystem in contrast to traditional approaches to self-organization is that within OSTIS \textit {Ecosystem} we initially
+in the process of ecosystem development form a hierarchy
+of ostis-systems and their specification so as to further
+simplify the process of organizing collective problem
+solving, in particular, the formation of a collective of
+performers, the transfer of messages between performers,
+etc., leaving the opportunity for continuous refinement
+and improvement. Thus, the agent system is initially built
+in such a way as to make self-organization more convenient by analogy with the way top-level ontologies are
+developed to ensure compatibility of ontologies instead
+of developing ontologies independently of each other and
+then solving the problem of ontology alignment, which
+most often turns out to be not trivial at all.\par
+In the paper [14] a methodology for the design of
+multi-agent systems including five stages is proposed.
+Let us consider in more detail the application of this
+methodology in the context of problem solving within
+the OSTIS \textit {Ecosystem}:
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+  \setlength{\parskip}{1pt}
+  \setlength{\parsep}{0pt}
+    \item \textbf {Step 1: Analyze the objectives for which the
+system is being developed.} The purpose of the
+work in this case is to ensure the potential possibility of solving any problems arising within the
+OSTIS \textit {Ecosystem}, which requires the availability
+of universal and unified means of describing the
+goals and objectives. Within the OSTIS \textit {Technology}
+framework, common unified means of specification
+of actions and tasks are proposed [4]. As far as
+semantic completeness of such tools is concerned
+(taking into account all possible classes of tasks that
+may arise), it is proposed to take as a basis the task
+ontology proposed in [15]
+\item  \textbf {Step 2: Designing the overall structure of the
+multi-agent system.} Within the framework of the
+considered approach, the structure of the multiagent system is based on the architecture of the
+OSTIS \textit {Ecosystem} discussed above and is constantly
+refined taking into account the addition of new
+agents to the OSTIS \textit {Ecosystem}. In terms of classification of agents of OSTIS \textit {Ecosystem} at the current
+stage it is proposed to single out only \textit {corporate
+ostis-systems} into a separate class due to the fact
+that they play a special role in the process of organizing collective problem solving. The principles of
+agents’ communication via \textit {corporate ostis-systems}
+are discussed in more detail at Step 4.
+\item \textbf{3: Designing the internal structure of the
+agent and the principles of its operation.} Since
+all OSTIS \textit{Ecosystem} agents are ostis-systems (even
+users of the OSTIS Ecosystem interact with it
+through personal ostis-assistants, which are ostissystems [4], [8]), additional specification of the
+principles of their structure is not required, as it
+is discussed in detail in the works devoted to the
+OSTIS Technology [4], [16]. To ensure the possibility of interaction between ostis-systems over
+the network, it is proposed to add an interface
+subsystem to each system, which is discussed in
+more detail in Step 5.
+\item \textbf{Step 4: Develop the principles of agent interaction.} As mentioned earlier, it is proposed to base the
+principles of agents’ communication within OSTIS
+\textit{Ecosystem} during collective problem solving on the
+principles of agents’ communication in the memory
+of ostis-systems (sc-agents). In the work [7] an
+approach is proposed assuming that one of the ostissystems included in the collective of ostis-systems
+will be used as a tool of communication for the
+participants of the collective of ostis-systems. If
+such collective is formed on a permanent basis (is
+a \textit{ostis-community} or a part of it), it is proposed
+to use the \textit{corporate ostis-system} of the specified
+ostis-community as such communicator system. If
+a collective of ostis-systems is formed temporarily
+for solving one or several complex problems, i.e.
+it is necessary to temporarily involve \tetxtit{ostis-systems}
+belonging to several \textit{ostis-communities}, two variants
+of organizing communication of ostis-systems are
+possible:
+\begin{enumerate}[label=\textbf{--},leftmargin=*]
+\setlength{\itemsep}{0pt}
+  \setlength{\parskip}{1pt}
+  \setlength{\parsep}{0pt}
+    \item One of the systems belonging to such a temporary collective of ostis-systems is selected as
+a communicator system. In this case, such an
+ostis-system becomes temporarily the \textit{corporate
+ostis-system} of the temporary \textit{ostis-community}.
+Accordingly, in this case it is required to install in
+the ostis-system an interface subsystem for ostis-systems and to load into its knowledge base the
+specifications of other ostis-systems participating
+in the problem solving process. Thus, the cost of
+preliminary preparation of a collective of ostis-systems for problem solving can be quite serious,
+and this approach may be ineffective for relatively
+simple problems solving.
+\item The \textit{corporate ostis-system} of the closest hierarchical \textit{ostis-community} is chosen as the communicator system, such that all ostis-systems required for the solution belong either to this ostiscommunity or to more private ostis-communities
+(possibly on several hierarchical levels). In the
+example of the \textit{ostis-communities} hierarchy fragment shown in Figure 2 , assuming that the problem solving requires the participation of \textit{ostis-systems} OS1, OS2, and OS3, then the \textit{corporate
+ostis-system} of \textit{ostis-community} OC1 will be selected as the communicator system.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=8.5cm]{ЛабаН1/F1.png}
+    \caption {\fontsize{8}{7}\selectfont Figure 2: Example of communicator system selection}
+    
+\end{figure}
+According to the above architecture of the OSTIS
+Ecosystem such an ostis-community will always
+exist, in the extreme case the role of such a
+corporate system will be played by the OSTIS
+\textit{Metasystem}. The disadvantage of this communication option is that sending messages between
+the participants of the problem solving process
+may generally take more time due to the increased
+path between the corporate ostis-system and the
+ostis-systems which are performers.
+\end{enumerate}
+It is important to note that in the presence of
+such a communicator system, agents at the logical
+level do not exchange messages directly, but communicate by specifying their actions in the shared
+memory of the communicator system; nevertheless,
+at the physical level, messages are forwarded between ostis-systems, generally physically located in
+different nodes of the network, arbitrarily distant
+from each other. This idea of separating the logical
+and physical layers of communication is realized
+within the concept of \textit{overlay networks} [17]. An
+overlay network is a virtual network whose structure
+differs from the real communication network on
+the basis of which this overlay network functions.
+The idea of using \textit{corporate ostis-systems} as a basis
+for agents’ communication in such a network and
+a repository of agents’ specifications and methods
+provided by them can be considered as a new stage
+of development of the idea of P2P agent platform
+developed by the FIPA consortium [17]. The main
+idea of such a platform is to provide all agents in the
+network with the possibility of semantic search for
+the services they need, as well as to search for agents
+that possess the required services. Another function
+of the platform is to support transparent communication between agents-customers and agents-owners
+of services [17]. In general, an agent network may
+have several such platforms, each responsible for
+a different segment of the network, similar to the
+way a \textit{corporate ostis-system} is responsible for a
+corresponding \textit{ostis-community}.\\
+To implement the language of interaction between
+ostis-systems, it is proposed to use the ideas of
+wave programming [18], [19], as well as insertion
+programming [20], [21] as a basis. Later variants of
+the wave language theory development were called
+Spatial Grasp Technology [18], [19], within which
+Spatial Grasp Language is developed accordingly.
+Implementing such interaction requires the development of at least two levels of languages:
+\begin{enumerate}[label=\textbf{--},leftmargin=*] 
+\setlength{\itemsep}{0pt}
+  \setlength{\parskip}{1pt}
+  \setlength{\parsep}{0pt}
+    \item transport layer defining the principles of recording SC-code constructions in some format convenient for network transmission. As a variant of such language it is proposed to use SCs-code [4];
+ \item semantic level defining the content of messages transmitted over the network. The SCP language, which is the basic programming language for ostis-systems, is proposed to be used as a basis for such a language [4].
+\end{enumerate}
+It is important to note that within the framework of
+the proposed approach, the \textit{corporate ostis-system}
+acts as a common information resource and notifies
+the participants of the problem solving process
+about the events, but does not control the problem
+solving process directly. Thus, it is not a question of
+rigid \underline{imperative management}, but of more flexible
+\underline{declarative}. This allows us to realize the advantages
+of the sc-agent interaction mechanism in a shared
+semantic memory [4], [11], such as modifiability
+of the agent system, convenience of its design and
+others.
+\item \textbf{Step 5: Develop the detailed architecture of the
+multi-agent system.} At this stage, it is supposed to
+clarify the principles of interaction between agents
+and the environment, taking into account the previously clarified agent structure and the principles of
+their interaction.\\
+Implementation of the proposed approach assumes
+that each ostis-system will include a communication
+interface subsystem that will receive messages from
+the external environment (from the \textit{corporate ostis=system}), transform them into tasks for internal scagents of the \textit{ostis-system}, and then transform the
+result of their work into a response message and
+send it to the corresponding recipient. An important
+feature of such a subsystem is that it behaves as
+a sc-agent when interacting with internal sc-agents
+and communicates with other sc-agents according
+to the same principles. This allows to ensure the
+independence of the development and evolution of
+such a subsystem from other components of the
+ostis-system and to exclude the necessity to take
+into account the fact of future interaction of the
+ostis-system with other ostis-systems at the stage of
+its design. In other words, an ostis-system solves
+a subtask within a distributed collective of ostissystems just as if it were solving a problem explicitly
+formulated, for example, by a user. This approach
+greatly simplifies the design of ostis-systems collectives, eliminating explicit dependencies between
+them and the need to provide for the necessity of
+collective problem solving in advance.\\
+In turn, each \textit{corporate ostis-system}, when interpreting a particular method, interacts with other
+ostis-systems as if they were internal sc-agents of
+this ostis-system. Thus, each \textit{corporate ostis-system}
+includes an interface subsystem that converts events
+in the memory of the corporate \textit{ostis-system} into
+messages to other \textit{ostis-system}s and response messages from these \textit{ostis-systems} into corresponding
+information constructs in the knowledge base of
+the \textit{corporate ostis-system}. This approach allows to
+ensure the independence of \textit{corporate ostis-systems}
+from other ostis-systems participating in the problem solving process and to exclude the necessity to
+provide in advance the necessity of collective problem solving not only when designing conventional
+ostis-systems, but also when designing \textit{corporate
+ostis-systems}. An illustration of this approach will
+be given below.
+\end{itemize}\par
+From the point of view of the modern classification
+of self-organization methods in multi-agent systems [17],
+the proposed approach of agent interaction at the logical
+level can be considered as a kind of mechanism based
+on indirect interactions of organizational agents. Mecha-
+
+\end{multicols}
+\end{document}
